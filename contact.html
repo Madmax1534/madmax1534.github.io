@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Portfolio.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="projects1.html" class="nav-link">Projets Classic</a></li>
+                <li><a href="projects2.html" class="nav-link">Projets Premium</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="contact.html" class="nav-link nav-link-cta active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contactez-nous</h1>
+            <p class="page-subtitle">Discutons de votre projet et donnons-lui vie ensemble</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Formulaire de contact -->
+                <div class="contact-form-wrapper">
+                    <h2>Envoyez-nous un message</h2>
+                    <p class="form-intro">Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="jean@exemple.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type">Type de projet *</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="classic">Site Vitrine Classic</option>
+                                <option value="premium">Site Vitrine Premium</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget estimé</label>
+                            <select id="budget" name="budget">
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="1000-3000">1 000€ - 3 000€</option>
+                                <option value="3000-5000">3 000€ - 5 000€</option>
+                                <option value="5000-10000">5 000€ - 10 000€</option>
+                                <option value="10000+">Plus de 10 000€</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez-nous votre projet..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            Envoyer le message
+                        </button>
+                        
+                        <p class="form-note">* Champs obligatoires</p>
+                    </form>
+
+                    <div id="form-success" class="form-message success" style="display: none;">
+                        <span class="message-icon">✓</span>
+                        Merci ! Votre message a été envoyé avec succès. Nous vous répondrons rapidement.
+                    </div>
+
+                    <div id="form-error" class="form-message error" style="display: none;">
+                        <span class="message-icon">✗</span>
+                        Une erreur s'est produite. Veuillez réessayer ou nous contacter directement.
+                    </div>
+                </div>
+
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <div class="info-card" data-tilt>
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@portfolio.com">contact@portfolio.com</a></p>
+                        <p class="info-detail">Réponse sous 24h</p>
+                    </div>
+
+                    <div class="info-card" data-tilt>
+                        <div class="info-icon">📱</div>
+                        <h3>Téléphone</h3>
+                        <p><a href="tel:+33612345678">+33 6 12 34 56 78</a></p>
+                        <p class="info-detail">Lun - Ven : 9h - 18h</p>
+                    </div>
+
+                    <div class="info-card" data-tilt>
+                        <div class="info-icon">📍</div>
+                        <h3>Localisation</h3>
+                        <p>Paris, France</p>
+                        <p class="info-detail">Interventions partout en France</p>
+                    </div>
+
+                    <div class="info-card social-card" data-tilt>
+                        <div class="info-icon">🌐</div>
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="LinkedIn">in</a>
+                            <a href="#" class="social-link" title="Instagram">ig</a>
+                            <a href="#" class="social-link" title="Twitter">tw</a>
+                            <a href="#" class="social-link" title="Facebook">fb</a>
+                        </div>
+                    </div>
+
+                    <div class="availability-card">
+                        <div class="availability-status online">
+                            <span class="status-dot"></span>
+                            Disponible maintenant
+                        </div>
+                        <p>Nous acceptons de nouveaux projets pour 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Quels sont vos délais de réalisation ?</h3>
+                    <p>Un site vitrine Classic est généralement livré en 2-3 semaines. Pour un projet Premium avec animations avancées, comptez 4-6 semaines.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Proposez-vous la maintenance ?</h3>
+                    <p>Oui ! Nous offrons des forfaits de maintenance mensuelle incluant mises à jour, sauvegardes et support technique.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Le site sera-t-il responsive ?</h3>
+                    <p>Absolument. Tous nos sites sont conçus en mobile-first et s'adaptent parfaitement à tous les appareils.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Puis-je modifier mon site moi-même ?</h3>
+                    <p>Oui, nous vous formons à l'utilisation de votre site et vous fournissons une documentation complète.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Portfolio.</h4>
+                    <p>Création de sites vitrines sur-mesure pour entrepreneurs et PME.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="projects1.html">Projets Classic</a></li>
+                        <li><a href="projects2.html">Projets Premium</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: contact@portfolio.com</p>
+                    <p>Tél: +33 6 12 34 56 78</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Gestion du formulaire de contact
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('form-success');
+        const errorMessage = document.getElementById('form-error');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Animation du bouton
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Envoi en cours...';
+            submitBtn.disabled = true;
+            
+            // Simuler l'envoi (remplacer par votre logique d'envoi réelle)
+            setTimeout(() => {
+                // Masquer les messages précédents
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'none';
+                
+                // Simuler un succès (à remplacer par votre logique)
+                const success = true;
+                
+                if (success) {
+                    successMessage.style.display = 'block';
+                    contactForm.reset();
+                    
+                    // Scroll vers le message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    errorMessage.style.display = 'block';
+                }
+                
+                // Réinitialiser le bouton
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        });
+
+        // Animation des inputs au focus
+        const inputs = document.querySelectorAll('.form-group input, .form-group textarea, .form-group select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
