@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bella Napoli - Pizzeria artisanale à Paris. Pizzas cuites au feu de bois, recettes traditionnelles italiennes. Livraison et sur place.">
+    <title>Bella Napoli | Pizzeria Artisanale Paris</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="wrapper">
+            <nav class="header-inner">
+                <a href="index.html" class="brand">
+                    <span class="brand__name">Bella Napoli</span>
+                    <span class="brand__tagline">Pizzeria Artisanale</span>
+                </a>
+                <ul class="main-nav__list">
+                    <li><a href="index.html" class="main-nav__link main-nav__link--active">Accueil</a></li>
+                    <li><a href="menu.html" class="main-nav__link">La Carte</a></li>
+                    <li><a href="galerie.html" class="main-nav__link">Galerie</a></li>
+                    <li><a href="contact.html" class="main-nav__link main-nav__link--cta">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__background">
+            <img src="images/hero-pizza.jpg" alt="Pizza artisanale">
+            <div class="hero__overlay"></div>
+        </div>
+        <article class="hero__content">
+            <p class="hero__subtitle">Benvenuti a</p>
+            <h1 class="hero__title">Bella Napoli</h1>
+            <p class="hero__description">
+                Découvrez l'authenticité de la cuisine italienne avec nos pizzas cuites au feu de bois,
+                préparées avec passion et des ingrédients frais importés d'Italie.
+            </p>
+            <div class="hero__buttons">
+                <a href="menu.html" class="btn btn--primary btn--large">Voir la Carte</a>
+                <a href="contact.html" class="btn btn--secondary btn--large">Réserver une Table</a>
+            </div>
+        </article>
+        <div class="hero__scroll">
+            <span>Découvrir</span>
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--alt">
+        <div class="wrapper">
+            <div class="about__grid">
+                <figure class="about__image-wrapper fade-in">
+                    <img src="images/about.jpg" alt="Notre pizzeria" class="about__image">
+                    <div class="about__image-accent"></div>
+                </figure>
+                <article class="about__content fade-in">
+                    <h2>Notre <span>Histoire</span></h2>
+                    <p>
+                        Depuis 2010, Bella Napoli perpétue la tradition napolitaine au cœur de Paris.
+                        Notre chef pizzaiolo, formé à Naples, prépare chaque pizza avec le même amour
+                        et le même savoir-faire que ses ancêtres.
+                    </p>
+                    <p>
+                        Notre pâte repose 48 heures pour une texture parfaite. Nos tomates San Marzano,
+                        notre mozzarella di Bufala et notre huile d'olive extra vierge sont importées
+                        directement d'Italie pour vous garantir une expérience authentique.
+                    </p>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <span class="about__feature-icon">🔥</span>
+                            <span class="about__feature-text">Four à bois traditionnel</span>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">🌿</span>
+                            <span class="about__feature-text">Produits frais & bio</span>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">🇮🇹</span>
+                            <span class="about__feature-text">Recettes authentiques</span>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">👨‍🍳</span>
+                            <span class="about__feature-text">Chef napolitain</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties -->
+    <section class="section">
+        <div class="wrapper">
+            <header class="section__header">
+                <p class="section__subtitle">Nos Créations</p>
+                <h2 class="section__title">Pizzas Signatures</h2>
+                <p class="section__intro">
+                    Découvrez nos créations exclusives, fruit de la passion de notre chef
+                    et de la tradition italienne.
+                </p>
+            </header>
+            <div class="specialties__grid">
+                <article class="specialty-card fade-in">
+                    <figure class="specialty-card__image">
+                        <img src="images/pizza-1.jpg" alt="Margherita">
+                        <span class="specialty-card__badge">Classique</span>
+                    </figure>
+                    <div class="specialty-card__content">
+                        <h3 class="specialty-card__title">La Margherita</h3>
+                        <p class="specialty-card__description">
+                            Tomate San Marzano, mozzarella di Bufala DOP, basilic frais, huile d'olive
+                        </p>
+                        <span class="specialty-card__price">14€</span>
+                    </div>
+                </article>
+                <article class="specialty-card fade-in">
+                    <figure class="specialty-card__image">
+                        <img src="images/pizza-2.jpg" alt="Quattro Formaggi">
+                        <span class="specialty-card__badge">Best-seller</span>
+                    </figure>
+                    <div class="specialty-card__content">
+                        <h3 class="specialty-card__title">Quattro Formaggi</h3>
+                        <p class="specialty-card__description">
+                            Mozzarella, gorgonzola, parmesan, chèvre, miel de truffe
+                        </p>
+                        <span class="specialty-card__price">18€</span>
+                    </div>
+                </article>
+                <article class="specialty-card fade-in">
+                    <figure class="specialty-card__image">
+                        <img src="images/pizza-3.jpg" alt="Bella Napoli">
+                        <span class="specialty-card__badge">Chef</span>
+                    </figure>
+                    <div class="specialty-card__content">
+                        <h3 class="specialty-card__title">La Bella Napoli</h3>
+                        <p class="specialty-card__description">
+                            Burrata crémeuse, jambon de Parme 24 mois, roquette, tomates cerises
+                        </p>
+                        <span class="specialty-card__price">21€</span>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="menu.html" class="btn btn--outline btn--large">Voir toute la carte</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Location Preview -->
+    <section class="section section--dark">
+        <div class="wrapper">
+            <header class="section__header">
+                <p class="section__subtitle">Venez nous voir</p>
+                <h2 class="section__title">Horaires d'Ouverture</h2>
+            </header>
+            <div class="hours__grid fade-in">
+                <div class="hours__item">
+                    <span class="hours__day">Lundi</span>
+                    <span class="hours__time">Fermé</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Mardi</span>
+                    <span class="hours__time">12h - 14h30 / 19h - 23h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Mercredi</span>
+                    <span class="hours__time">12h - 14h30 / 19h - 23h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Jeudi</span>
+                    <span class="hours__time">12h - 14h30 / 19h - 23h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Vendredi</span>
+                    <span class="hours__time">12h - 14h30 / 19h - 00h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Samedi</span>
+                    <span class="hours__time">12h - 00h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Dimanche</span>
+                    <span class="hours__time">12h - 22h</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="wrapper">
+            <div class="cta-banner__content">
+                <h2>Une envie de pizza ?</h2>
+                <p>Réservez votre table ou commandez en ligne pour une livraison rapide</p>
+                <a href="contact.html" class="btn btn--secondary btn--large">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="brand__name">Bella Napoli</span>
+                    <span class="brand__tagline">Pizzeria Artisanale</span>
+                    <p>L'authentique pizza napolitaine au cœur de Paris depuis 2010.</p>
+                    <div class="footer__social">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="TripAdvisor">🌟</a>
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">La Carte</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__links">
+                        <li>25 Rue de la Paix</li>
+                        <li>75002 Paris</li>
+                        <li><a href="tel:+33145678901">01 45 67 89 01</a></li>
+                        <li><a href="mailto:ciao@bellanapoli.fr">ciao@bellanapoli.fr</a></li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4 class="footer__title">Horaires</h4>
+                    <ul class="footer__links">
+                        <li>Mar - Jeu : 12h-14h30 / 19h-23h</li>
+                        <li>Ven : 12h-14h30 / 19h-00h</li>
+                        <li>Sam : 12h-00h</li>
+                        <li>Dim : 12h-22h</li>
+                        <li>Lun : Fermé</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Bella Napoli. Tous droits réservés. | Site créé par <a href="#">Lomaxia</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

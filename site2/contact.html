@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Bella Napoli - Réservez votre table, commandez en ligne ou venez nous rendre visite. Pizzeria italienne à Paris, 25 Rue de la Paix.">
+    <title>Contact & Réservation | Bella Napoli Paris</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header scrolled">
+        <div class="wrapper">
+            <nav class="header-inner">
+                <a href="index.html" class="brand">
+                    <span class="brand__name">Bella Napoli</span>
+                    <span class="brand__tagline">Pizzeria Artisanale</span>
+                </a>
+                <ul class="main-nav__list">
+                    <li><a href="index.html" class="main-nav__link">Accueil</a></li>
+                    <li><a href="menu.html" class="main-nav__link">La Carte</a></li>
+                    <li><a href="galerie.html" class="main-nav__link">Galerie</a></li>
+                    <li><a href="contact.html" class="main-nav__link main-nav__link--cta main-nav__link--active">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="page-banner__background"></div>
+        <article class="page-banner__content">
+            <h1 class="page-banner__title">Réservation</h1>
+            <p class="page-banner__subtitle">Venez partager un moment avec nous</p>
+        </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="wrapper">
+            <div class="contact__grid">
+                <!-- Form -->
+                <div class="contact__form fade-in">
+                    <h3>Réserver une table</h3>
+                    <form id="reservation-form">
+                        <div class="form__group">
+                            <label class="form__label" for="name">Nom complet *</label>
+                            <input type="text" class="form__input" id="name" name="name" required placeholder="Mario Rossi">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="email">Email *</label>
+                            <input type="email" class="form__input" id="email" name="email" required placeholder="mario@email.com">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="phone">Téléphone *</label>
+                            <input type="tel" class="form__input" id="phone" name="phone" required placeholder="06 12 34 56 78">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form__group">
+                                <label class="form__label" for="date">Date *</label>
+                                <input type="date" class="form__input" id="date" name="date" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="time">Heure *</label>
+                                <select class="form__select" id="time" name="time" required>
+                                    <option value="">Choisir</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="guests">Nombre de personnes *</label>
+                            <select class="form__select" id="guests" name="guests" required>
+                                <option value="">Choisir</option>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6 personnes</option>
+                                <option value="7">7 personnes</option>
+                                <option value="8">8+ personnes</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="message">Demande spéciale</label>
+                            <textarea class="form__textarea" id="message" name="message" placeholder="Allergies, occasion spéciale, placement en terrasse..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">
+                            Envoyer la réservation
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <aside class="contact__info fade-in">
+                    <article class="contact__card">
+                        <span class="contact__card-icon">📍</span>
+                        <div class="contact__card-content">
+                            <h4>Adresse</h4>
+                            <p>25 Rue de la Paix<br>75002 Paris, France</p>
+                        </div>
+                    </article>
+                    <article class="contact__card">
+                        <span class="contact__card-icon">📞</span>
+                        <div class="contact__card-content">
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:+33145678901">01 45 67 89 01</a></p>
+                            <p>Pour réservations de groupe</p>
+                        </div>
+                    </article>
+                    <article class="contact__card">
+                        <span class="contact__card-icon">✉️</span>
+                        <div class="contact__card-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:ciao@bellanapoli.fr">ciao@bellanapoli.fr</a></p>
+                            <p>Réponse sous 24h</p>
+                        </div>
+                    </article>
+                    <article class="contact__card">
+                        <span class="contact__card-icon">🚇</span>
+                        <div class="contact__card-content">
+                            <h4>Accès</h4>
+                            <p>Métro Opéra (Lignes 3, 7, 8)<br>Parking Vendôme à 100m</p>
+                        </div>
+                    </article>
+
+                    <!-- Map -->
+                    <div class="contact__map">
+                        <div id="map"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours -->
+    <section class="section section--alt">
+        <div class="wrapper">
+            <header class="section__header">
+                <p class="section__subtitle">Quand venir</p>
+                <h2 class="section__title">Nos Horaires</h2>
+            </header>
+            <div class="hours__grid fade-in">
+                <div class="hours__item hours__item--closed">
+                    <span class="hours__day">Lundi</span>
+                    <span class="hours__time">Fermé</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Mardi</span>
+                    <span class="hours__time">12h-14h30 / 19h-23h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Mercredi</span>
+                    <span class="hours__time">12h-14h30 / 19h-23h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Jeudi</span>
+                    <span class="hours__time">12h-14h30 / 19h-23h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Vendredi</span>
+                    <span class="hours__time">12h-14h30 / 19h-00h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Samedi</span>
+                    <span class="hours__time">12h-00h</span>
+                </div>
+                <div class="hours__item">
+                    <span class="hours__day">Dimanche</span>
+                    <span class="hours__time">12h-22h</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="wrapper">
+            <header class="section__header">
+                <p class="section__subtitle">Informations</p>
+                <h2 class="section__title">Questions Fréquentes</h2>
+            </header>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <article style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <h4 style="color: #c41e3a; margin-bottom: 0.75rem; font-size: 1.1rem;">Faut-il réserver ?</h4>
+                    <p style="color: #777;">La réservation est recommandée, surtout le week-end. Nous acceptons aussi les clients sans réservation selon disponibilité.</p>
+                </article>
+                <article style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <h4 style="color: #c41e3a; margin-bottom: 0.75rem; font-size: 1.1rem;">Faites-vous la livraison ?</h4>
+                    <p style="color: #777;">Oui ! Nous livrons dans un rayon de 3km via UberEats et Deliveroo. À emporter également disponible.</p>
+                </article>
+                <article style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <h4 style="color: #c41e3a; margin-bottom: 0.75rem; font-size: 1.1rem;">Avez-vous des options végétariennes ?</h4>
+                    <p style="color: #777;">Absolument ! Plusieurs de nos pizzas et antipasti sont végétariens. Nous pouvons aussi adapter certaines recettes.</p>
+                </article>
+                <article style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <h4 style="color: #c41e3a; margin-bottom: 0.75rem; font-size: 1.1rem;">Acceptez-vous les groupes ?</h4>
+                    <p style="color: #777;">Oui, jusqu'à 25 personnes. Pour les groupes de plus de 8, merci de nous contacter par téléphone.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="brand__name">Bella Napoli</span>
+                    <span class="brand__tagline">Pizzeria Artisanale</span>
+                    <p>L'authentique pizza napolitaine au cœur de Paris depuis 2010.</p>
+                    <div class="footer__social">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="TripAdvisor">🌟</a>
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">La Carte</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__links">
+                        <li>25 Rue de la Paix</li>
+                        <li>75002 Paris</li>
+                        <li><a href="tel:+33145678901">01 45 67 89 01</a></li>
+                        <li><a href="mailto:ciao@bellanapoli.fr">ciao@bellanapoli.fr</a></li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4 class="footer__title">Horaires</h4>
+                    <ul class="footer__links">
+                        <li>Mar - Jeu : 12h-14h30 / 19h-23h</li>
+                        <li>Ven : 12h-14h30 / 19h-00h</li>
+                        <li>Sam : 12h-00h</li>
+                        <li>Dim : 12h-22h</li>
+                        <li>Lun : Fermé</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Bella Napoli. Tous droits réservés. | Site créé par <a href="#">Lomaxia</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

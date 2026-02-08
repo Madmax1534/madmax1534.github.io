@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La carte de Bella Napoli - Pizzas artisanales, antipasti, desserts italiens et vins. Découvrez nos recettes traditionnelles napolitaines.">
+    <title>La Carte | Bella Napoli Paris</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header scrolled">
+        <div class="wrapper">
+            <nav class="header-inner">
+                <a href="index.html" class="brand">
+                    <span class="brand__name">Bella Napoli</span>
+                    <span class="brand__tagline">Pizzeria Artisanale</span>
+                </a>
+                <ul class="main-nav__list">
+                    <li><a href="index.html" class="main-nav__link">Accueil</a></li>
+                    <li><a href="menu.html" class="main-nav__link main-nav__link--active">La Carte</a></li>
+                    <li><a href="galerie.html" class="main-nav__link">Galerie</a></li>
+                    <li><a href="contact.html" class="main-nav__link main-nav__link--cta">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="page-banner__background"></div>
+        <article class="page-banner__content">
+            <h1 class="page-banner__title">La Carte</h1>
+            <p class="page-banner__subtitle">Nos créations artisanales</p>
+        </article>
+    </section>
+
+    <!-- Menu Navigation -->
+    <nav class="menu-nav">
+        <div class="wrapper">
+            <ul class="menu-nav__list">
+                <li><button class="menu-nav__btn menu-nav__btn--active" data-category="pizzas">Pizzas</button></li>
+                <li><button class="menu-nav__btn" data-category="antipasti">Antipasti</button></li>
+                <li><button class="menu-nav__btn" data-category="desserts">Desserts</button></li>
+                <li><button class="menu-nav__btn" data-category="boissons">Boissons</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Pizzas -->
+    <section class="menu-category" id="pizzas">
+        <div class="wrapper">
+            <h2 class="menu-category__title">Nos Pizzas</h2>
+            <div class="menu-items">
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-1.jpg" alt="Margherita">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Margherita</h3>
+                            <span class="menu-item__price">14€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Tomate San Marzano, mozzarella di Bufala DOP, basilic frais, huile d'olive extra vierge</p>
+                        <div class="menu-item__tags">
+                            <span class="menu-item__tag menu-item__tag--veggie">Végétarien</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-2.jpg" alt="Quattro Formaggi">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Quattro Formaggi</h3>
+                            <span class="menu-item__price">18€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Mozzarella, gorgonzola DOP, parmesan 24 mois, chèvre frais, miel de truffe</p>
+                        <div class="menu-item__tags">
+                            <span class="menu-item__tag menu-item__tag--veggie">Végétarien</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-3.jpg" alt="Bella Napoli">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Bella Napoli</h3>
+                            <span class="menu-item__price">21€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Burrata crémeuse, jambon de Parme 24 mois, roquette, tomates cerises confites</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-4.jpg" alt="Diavola">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Diavola</h3>
+                            <span class="menu-item__price">16€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Tomate, mozzarella, salami piquant calabrais, piments, huile pimentée</p>
+                        <div class="menu-item__tags">
+                            <span class="menu-item__tag menu-item__tag--spicy">Piquant</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-5.jpg" alt="Capricciosa">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Capricciosa</h3>
+                            <span class="menu-item__price">17€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Tomate, mozzarella, jambon cuit, champignons, artichauts, olives noires</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-6.jpg" alt="Calzone">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Calzone Ripieno</h3>
+                            <span class="menu-item__price">18€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Ricotta, mozzarella, jambon cuit, champignons, sauce tomate maison</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-1.jpg" alt="Truffle">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Tartufo</h3>
+                            <span class="menu-item__price">24€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Crème de truffe, mozzarella, champignons, copeaux de truffe noire, huile de truffe</p>
+                        <div class="menu-item__tags">
+                            <span class="menu-item__tag menu-item__tag--veggie">Végétarien</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/pizza-2.jpg" alt="Prosciutto">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Prosciutto e Funghi</h3>
+                            <span class="menu-item__price">16€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Tomate, mozzarella, jambon cuit artisanal, champignons frais sautés</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Antipasti -->
+    <section class="menu-category" id="antipasti">
+        <div class="wrapper">
+            <h2 class="menu-category__title">Antipasti</h2>
+            <div class="menu-items">
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Bruschetta">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Bruschetta Classica</h3>
+                            <span class="menu-item__price">8€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Pain grillé, tomates fraîches, ail, basilic, huile d'olive extra vierge</p>
+                        <div class="menu-item__tags">
+                            <span class="menu-item__tag menu-item__tag--veggie">Végétarien</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Antipasto">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Antipasto Misto</h3>
+                            <span class="menu-item__price">16€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Assortiment de charcuteries italiennes, fromages, olives, légumes grillés</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Burrata">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Burrata des Pouilles</h3>
+                            <span class="menu-item__price">14€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Burrata crémeuse, tomates cerises, pesto de basilic, huile d'olive</p>
+                        <div class="menu-item__tags">
+                            <span class="menu-item__tag menu-item__tag--veggie">Végétarien</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Carpaccio">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Carpaccio di Manzo</h3>
+                            <span class="menu-item__price">15€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Fines tranches de bœuf, roquette, copeaux de parmesan, câpres</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts -->
+    <section class="menu-category" id="desserts">
+        <div class="wrapper">
+            <h2 class="menu-category__title">Dolci</h2>
+            <div class="menu-items">
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Tiramisu">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Tiramisu della Nonna</h3>
+                            <span class="menu-item__price">8€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Recette traditionnelle au mascarpone, café espresso, cacao amer</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Panna Cotta">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Panna Cotta</h3>
+                            <span class="menu-item__price">7€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Crème vanillée onctueuse, coulis de fruits rouges de saison</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Cannoli">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Cannoli Siciliani</h3>
+                            <span class="menu-item__price">7€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Pâte croustillante, ricotta sucrée, pistaches de Bronte, chocolat</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Gelato">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Gelato Artigianale</h3>
+                            <span class="menu-item__price">6€</span>
+                        </header>
+                        <p class="menu-item__ingredients">3 boules au choix : vanille, chocolat, pistache, stracciatella, citron</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boissons -->
+    <section class="menu-category" id="boissons">
+        <div class="wrapper">
+            <h2 class="menu-category__title">Bevande</h2>
+            <div class="menu-items">
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Vins">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Vins Italiens</h3>
+                            <span class="menu-item__price">5€ - 8€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Chianti, Montepulciano, Primitivo, Prosecco... Voir notre carte des vins</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Birra">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Birra Italiana</h3>
+                            <span class="menu-item__price">5€ - 7€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Peroni, Moretti, Menabrea, bières artisanales italiennes</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Limoncello">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Limoncello</h3>
+                            <span class="menu-item__price">6€</span>
+                        </header>
+                        <p class="menu-item__ingredients">Digestif traditionnel de la côte amalfitaine, servi glacé</p>
+                    </div>
+                </article>
+                <article class="menu-item fade-in">
+                    <figure class="menu-item__image">
+                        <img src="images/plat.jpg" alt="Soft">
+                    </figure>
+                    <div class="menu-item__content">
+                        <header class="menu-item__header">
+                            <h3 class="menu-item__name">Boissons Softs</h3>
+                            <span class="menu-item__price">3€ - 5€</span>
+                        </header>
+                        <p class="menu-item__ingredients">San Pellegrino, Limonata, Aranciata, Coca-Cola, jus de fruits frais</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="wrapper">
+            <div class="cta-banner__content">
+                <h2>Faim de pizza ?</h2>
+                <p>Commandez en ligne ou réservez votre table pour déguster sur place</p>
+                <a href="contact.html" class="btn btn--secondary btn--large">Commander / Réserver</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="brand__name">Bella Napoli</span>
+                    <span class="brand__tagline">Pizzeria Artisanale</span>
+                    <p>L'authentique pizza napolitaine au cœur de Paris depuis 2010.</p>
+                    <div class="footer__social">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="TripAdvisor">🌟</a>
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">La Carte</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__links">
+                        <li>25 Rue de la Paix</li>
+                        <li>75002 Paris</li>
+                        <li><a href="tel:+33145678901">01 45 67 89 01</a></li>
+                        <li><a href="mailto:ciao@bellanapoli.fr">ciao@bellanapoli.fr</a></li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4 class="footer__title">Horaires</h4>
+                    <ul class="footer__links">
+                        <li>Mar - Jeu : 12h-14h30 / 19h-23h</li>
+                        <li>Ven : 12h-14h30 / 19h-00h</li>
+                        <li>Sam : 12h-00h</li>
+                        <li>Dim : 12h-22h</li>
+                        <li>Lun : Fermé</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Bella Napoli. Tous droits réservés. | Site créé par <a href="#">Lomaxia</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

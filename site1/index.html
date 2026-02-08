@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hair Studio - Salon de coiffure haut de gamme à Paris. Coupes, colorations, soins capillaires pour femmes, hommes et enfants.">
+    <title>Hair Studio | Salon de Coiffure Paris</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Hair <span>Studio</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>L'Art de la Coiffure</h1>
+            <p>Bienvenue chez Hair Studio, votre salon de coiffure haut de gamme au cœur de Paris. Nous sublimions votre beauté naturelle avec passion et expertise.</p>
+            <a href="contact.html" class="btn btn-primary">Prendre Rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="images/about.jpg" alt="Intérieur du salon Hair Studio">
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Bienvenue chez Hair Studio</h3>
+                    <p>Depuis plus de 15 ans, Hair Studio est devenu une référence incontournable de la coiffure parisienne. Notre équipe de coiffeurs passionnés et talentueux s'engage à vous offrir une expérience unique, alliant savoir-faire traditionnel et tendances actuelles.</p>
+                    <p>Dans un cadre élégant et chaleureux, nous prenons le temps de comprendre vos envies et de vous conseiller pour sublimer votre personnalité. Que ce soit pour une coupe, une coloration ou un soin, chaque visite est un moment de détente et de bien-être.</p>
+                    <a href="services.html" class="btn btn-primary">Découvrir nos services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Nos Services</h2>
+                <p>Des prestations de qualité pour sublimer votre beauté</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="icon">✂️</div>
+                    <h3>Coupes Femmes</h3>
+                    <p>Des coupes tendances et personnalisées qui révèlent votre style unique.</p>
+                    <span class="price">À partir de 45€</span>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon">💇</div>
+                    <h3>Coupes Hommes</h3>
+                    <p>Du classique au moderne, des coupes soignées adaptées à votre personnalité.</p>
+                    <span class="price">À partir de 25€</span>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon">🎨</div>
+                    <h3>Colorations</h3>
+                    <p>Des couleurs vibrantes et durables avec des produits de haute qualité.</p>
+                    <span class="price">À partir de 55€</span>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon">✨</div>
+                    <h3>Soins Capillaires</h3>
+                    <p>Des soins profonds pour des cheveux sains, brillants et revitalisés.</p>
+                    <span class="price">À partir de 30€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Nous Trouver</h2>
+                <p>Situé au cœur de Paris, notre salon vous accueille dans un cadre raffiné</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info fade-in">
+                    <h3>Notre Adresse</h3>
+                    <div class="address">
+                        <span class="icon">📍</span>
+                        <div>
+                            <p><strong>Hair Studio</strong></p>
+                            <p>47 Avenue des Champs-Élysées</p>
+                            <p>75008 Paris, France</p>
+                        </div>
+                    </div>
+                    <p><strong>Téléphone :</strong> <a href="tel:+33142659874">01 42 65 98 74</a></p>
+                    <p><strong>Email :</strong> <a href="mailto:contact@hairstudio.fr">contact@hairstudio.fr</a></p>
+                    <p><strong>Métro :</strong> George V (Ligne 1) ou Franklin D. Roosevelt (Lignes 1 et 9)</p>
+                </div>
+                <div class="fade-in">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Horaires d'Ouverture</h2>
+            </div>
+            <div class="hours-grid fade-in">
+                <div class="hours-item">
+                    <span class="day">Lundi</span>
+                    <span class="time">10h00 - 19h00</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day">Mardi</span>
+                    <span class="time">10h00 - 19h00</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day">Mercredi</span>
+                    <span class="time">10h00 - 19h00</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day">Jeudi</span>
+                    <span class="time">10h00 - 20h00</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day">Vendredi</span>
+                    <span class="time">10h00 - 20h00</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day">Samedi</span>
+                    <span class="time">09h00 - 18h00</span>
+                </div>
+                <div class="hours-item closed">
+                    <span class="day">Dimanche</span>
+                    <span class="time">Fermé</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à sublimer votre look ?</h2>
+            <p>Prenez rendez-vous dès maintenant et laissez nos experts prendre soin de vous.</p>
+            <a href="contact.html" class="btn btn-primary">Nous Contacter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hair Studio</h4>
+                    <p>Votre salon de coiffure haut de gamme à Paris depuis 2009.</p>
+                    <p>L'excellence au service de votre beauté.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>47 Avenue des Champs-Élysées</p>
+                    <p>75008 Paris</p>
+                    <p>Tél : 01 42 65 98 74</p>
+                    <p>Email : contact@hairstudio.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun - Mer : 10h - 19h</p>
+                    <p>Jeu - Ven : 10h - 20h</p>
+                    <p>Samedi : 9h - 18h</p>
+                    <p>Dimanche : Fermé</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hair Studio. Tous droits réservés. | Site créé par <a href="https://lomaxia.com" target="_blank" rel="noopener">Lomaxia</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerie photo Hair Studio Paris - Découvrez nos réalisations : coupes, colorations, coiffures de mariage et transformations capillaires.">
+    <title>Galerie | Hair Studio Paris</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Hair <span>Studio</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="galerie.html" class="active">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Notre Galerie</h1>
+        <p>Découvrez nos réalisations et laissez-vous inspirer</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+
+            <!-- Filters -->
+            <div class="gallery-filters fade-in">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="coupes">Coupes</button>
+                <button class="filter-btn" data-filter="colorations">Colorations</button>
+                <button class="filter-btn" data-filter="mariages">Mariages</button>
+                <button class="filter-btn" data-filter="hommes">Hommes</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Coupes -->
+                <div class="gallery-item fade-in" data-category="coupes">
+                    <img src="images/gallery-1.jpg" alt="Coupe femme moderne">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="coupes">
+                    <img src="images/gallery-2.jpg" alt="Coupe courte élégante">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="coupes">
+                    <img src="images/gallery-3.jpg" alt="Coupe longue stylée">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+
+                <!-- Colorations -->
+                <div class="gallery-item fade-in" data-category="colorations">
+                    <img src="images/gallery-4.jpg" alt="Balayage naturel">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="colorations">
+                    <img src="images/gallery-5.jpg" alt="Coloration blonde">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="colorations">
+                    <img src="images/gallery-6.jpg" alt="Ombré hair">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+
+                <!-- Mariages -->
+                <div class="gallery-item fade-in" data-category="mariages">
+                    <img src="images/gallery-7.jpg" alt="Chignon de mariée">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="mariages">
+                    <img src="images/gallery-8.jpg" alt="Coiffure mariage romantique">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="mariages">
+                    <img src="images/gallery-9.jpg" alt="Coiffure cérémonie">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+
+                <!-- Hommes -->
+                <div class="gallery-item fade-in" data-category="hommes">
+                    <img src="images/gallery-10.jpg" alt="Coupe homme tendance">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="hommes">
+                    <img src="images/gallery-11.jpg" alt="Dégradé moderne">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="hommes">
+                    <img src="images/gallery-12.jpg" alt="Coupe barbe">
+                    <div class="overlay">
+                        <span>🔍</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Envie d'une nouvelle coiffure ?</h2>
+            <p>Prenez rendez-vous et confiez-nous votre look.</p>
+            <a href="contact.html" class="btn btn-primary">Prendre Rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hair Studio</h4>
+                    <p>Votre salon de coiffure haut de gamme à Paris depuis 2009.</p>
+                    <p>L'excellence au service de votre beauté.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>47 Avenue des Champs-Élysées</p>
+                    <p>75008 Paris</p>
+                    <p>Tél : 01 42 65 98 74</p>
+                    <p>Email : contact@hairstudio.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun - Mer : 10h - 19h</p>
+                    <p>Jeu - Ven : 10h - 20h</p>
+                    <p>Samedi : 9h - 18h</p>
+                    <p>Dimanche : Fermé</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hair Studio. Tous droits réservés. | Site créé par <a href="https://lomaxia.com" target="_blank" rel="noopener">Lomaxia</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
