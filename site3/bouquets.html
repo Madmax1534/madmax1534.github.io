@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Bouquets — Fleur & Moi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="navbar">
+        <div class="navbar__inner">
+            <ul class="navbar__links--left">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bouquets.html" class="nav-link active">Bouquets</a></li>
+            </ul>
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__logo-link">Fleur <span>&</span> Moi</a>
+            </div>
+            <ul class="navbar__links--right">
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="navbar__toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="navbar__mobile">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="bouquets.html" class="nav-link active">Bouquets</a>
+            <a href="galerie.html" class="nav-link">Galerie</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="navbar__overlay"></div>
+    </header>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner" style="background-image: url('images/gallery-2.jpg');">
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Nos Bouquets</h1>
+            <p class="page-banner__subtitle">Compositions florales pour toutes les occasions</p>
+        </div>
+    </section>
+
+    <!-- ===== BOUQUETS CATALOG ===== -->
+    <section class="bouquets">
+        <div class="container">
+
+            <!-- Filter Tabs -->
+            <div class="bouquet-tabs fade-in">
+                <button class="bouquet-tabs__btn active" data-filter="all">Tous</button>
+                <button class="bouquet-tabs__btn" data-filter="classiques">Classiques</button>
+                <button class="bouquet-tabs__btn" data-filter="saison">De Saison</button>
+                <button class="bouquet-tabs__btn" data-filter="mariage">Mariage</button>
+                <button class="bouquet-tabs__btn" data-filter="plantes">Plantes</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="bouquets__grid">
+
+                <!-- Bouquet 1 — Romance -->
+                <article class="bouquet-card fade-in" data-category="classiques" data-delay="1">
+                    <div class="bouquet-card__image">
+                        <span class="bouquet-card__label bouquet-card__label--new">Best-seller</span>
+                        <img src="images/bouquet-1.jpg" alt="Bouquet Romance">
+                        <span class="bouquet-card__badge">45€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Romance Éternelle</h3>
+                        <p class="bouquet-card__desc">Roses rouges, pivoines roses et eucalyptus. Un bouquet intemporel, symbole d'amour et d'élégance.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Classique</span>
+                            <span class="bouquet-card__tag">Roses</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 2 — Douceur Pastel -->
+                <article class="bouquet-card fade-in" data-category="classiques" data-delay="2">
+                    <div class="bouquet-card__image">
+                        <img src="images/bouquet-2.jpg" alt="Bouquet Douceur Pastel">
+                        <span class="bouquet-card__badge">39€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Douceur Pastel</h3>
+                        <p class="bouquet-card__desc">Lisianthus, hortensias et roses dans des teintes douces de rose et lavande. Délicat et raffiné.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Classique</span>
+                            <span class="bouquet-card__tag">Pastel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 3 — Soleil -->
+                <article class="bouquet-card fade-in" data-category="classiques" data-delay="3">
+                    <div class="bouquet-card__image">
+                        <img src="images/bouquet-3.jpg" alt="Bouquet Soleil">
+                        <span class="bouquet-card__badge">35€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Rayon de Soleil</h3>
+                        <p class="bouquet-card__desc">Tournesols, germinis jaunes et solidago. Un bouquet lumineux qui apporte joie et bonne humeur.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Classique</span>
+                            <span class="bouquet-card__tag">Tournesols</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 4 — Printanier -->
+                <article class="bouquet-card fade-in" data-category="saison" data-delay="1">
+                    <div class="bouquet-card__image">
+                        <span class="bouquet-card__label bouquet-card__label--new">Nouveau</span>
+                        <img src="images/bouquet-4.jpg" alt="Bouquet Printanier">
+                        <span class="bouquet-card__badge">38€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Éclat Printanier</h3>
+                        <p class="bouquet-card__desc">Tulipes, renoncules et anémones dans un mélange vibrant qui capture la fraîcheur du printemps.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Saison</span>
+                            <span class="bouquet-card__tag">Printemps</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 5 — Automnal -->
+                <article class="bouquet-card fade-in" data-category="saison" data-delay="2">
+                    <div class="bouquet-card__image">
+                        <img src="images/bouquet-5.jpg" alt="Bouquet Automnal">
+                        <span class="bouquet-card__badge">42€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Chaleur d'Automne</h3>
+                        <p class="bouquet-card__desc">Chrysanthèmes, dahlias et baies. Des teintes chaudes d'orange, bordeaux et cuivre pour une ambiance automnale.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Saison</span>
+                            <span class="bouquet-card__tag">Automne</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 6 — Champêtre -->
+                <article class="bouquet-card fade-in" data-category="saison" data-delay="3">
+                    <div class="bouquet-card__image">
+                        <img src="images/bouquet-6.jpg" alt="Bouquet Champêtre">
+                        <span class="bouquet-card__badge">32€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Jardin Champêtre</h3>
+                        <p class="bouquet-card__desc">Marguerites, lavande et herbes sauvages. Un bouquet naturel et spontané, comme cueilli au jardin.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Saison</span>
+                            <span class="bouquet-card__tag">Champêtre</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 7 — Bouquet de Mariée -->
+                <article class="bouquet-card fade-in" data-category="mariage" data-delay="1">
+                    <div class="bouquet-card__image">
+                        <span class="bouquet-card__label bouquet-card__label--promo">Sur devis</span>
+                        <img src="images/bouquet-7.jpg" alt="Bouquet de Mariée">
+                        <span class="bouquet-card__badge">80€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Bouquet de Mariée</h3>
+                        <p class="bouquet-card__desc">Roses blanches, lisianthus et eucalyptus. Un bouquet élégant et intemporel pour sublimer votre robe le jour J.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Mariage</span>
+                            <span class="bouquet-card__tag">Sur-mesure</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 8 — Centre de Table -->
+                <article class="bouquet-card fade-in" data-category="mariage" data-delay="2">
+                    <div class="bouquet-card__image">
+                        <span class="bouquet-card__label bouquet-card__label--promo">Sur devis</span>
+                        <img src="images/bouquet-8.jpg" alt="Centre de table">
+                        <span class="bouquet-card__badge">60€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Centre de Table</h3>
+                        <p class="bouquet-card__desc">Composition basse et élégante de roses, pivoines et feuillage. Parfaite pour vos tables de réception.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Mariage</span>
+                            <span class="bouquet-card__tag">Décoration</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bouquet 9 — Orchidée -->
+                <article class="bouquet-card fade-in" data-category="plantes" data-delay="1">
+                    <div class="bouquet-card__image">
+                        <img src="images/bouquet-9.jpg" alt="Orchidée en pot">
+                        <span class="bouquet-card__badge">49€</span>
+                    </div>
+                    <div class="bouquet-card__content">
+                        <h3 class="bouquet-card__name">Orchidée Phalaenopsis</h3>
+                        <p class="bouquet-card__desc">Orchidée en pot de céramique blanche. Élégante et facile d'entretien, elle fleurit pendant plusieurs mois.</p>
+                        <div class="bouquet-card__tags">
+                            <span class="bouquet-card__tag">Plante</span>
+                            <span class="bouquet-card__tag">Intérieur</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" style="background-image: url('images/cta-bg.jpg');">
+        <div class="cta__content fade-in">
+            <h2 class="cta__title">Besoin d'un bouquet sur-mesure ?</h2>
+            <p class="cta__text">Nous créons des compositions personnalisées selon vos envies, votre budget et l'occasion.</p>
+            <a href="contact.html" class="btn btn--white btn--lg">Demander un devis</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__left">
+                <h3 class="footer__brand-name">Fleur <span>&</span> Moi</h3>
+                <p class="footer__brand-desc">Artisan fleuriste à Paris depuis 2015. Nous créons des compositions florales uniques pour embellir chaque moment de votre vie.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div>
+                    <h4 class="footer__nav-title">Navigation</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="bouquets.html">Bouquets</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__contact-title">Contact</h4>
+                    <p class="footer__contact-item">12 Rue de Rivoli, 75004 Paris</p>
+                    <p class="footer__contact-item"><a href="tel:0143XXXXXX">01 43 XX XX XX</a></p>
+                    <p class="footer__contact-item"><a href="mailto:contact@fleuretmoi.fr">contact@fleuretmoi.fr</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2026 Fleur & Moi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Retour en haut">&uarr;</button>
+    <script src="js/main.js"></script>
+</body>
+</html>

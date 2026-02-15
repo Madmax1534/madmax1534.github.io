@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleur & Moi - Artisan Fleuriste Paris</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;600&family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="navbar">
+        <div class="navbar__inner">
+            <ul class="navbar__links--left">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="bouquets.html" class="nav-link">Bouquets</a></li>
+            </ul>
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__logo-link">Fleur <span>&</span> Moi</a>
+            </div>
+            <ul class="navbar__links--right">
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="navbar__toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <nav class="navbar__mobile">
+            <a href="index.html" class="nav-link active">Accueil</a>
+            <a href="bouquets.html" class="nav-link">Bouquets</a>
+            <a href="galerie.html" class="nav-link">Galerie</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="navbar__overlay"></div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero__image">
+            <img src="images/hero-bouquet.jpg" alt="Bouquet de fleurs artisanal">
+        </div>
+        <div class="hero__content">
+            <span class="hero__label">Artisan Fleuriste depuis 2015</span>
+            <h1 class="hero__title">Des fleurs qui <em>racontent</em> votre histoire</h1>
+            <p class="hero__text">Compositions florales sur-mesure pour tous vos moments de vie. Bouquets, mariages, événements — chaque création est unique.</p>
+            <div class="hero__actions">
+                <a href="bouquets.html" class="btn btn--primary">Voir nos bouquets</a>
+                <a href="contact.html" class="btn btn--outline">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES STRIP ===== -->
+    <section class="services-strip fade-in">
+        <div class="section__header">
+            <span class="section__label">Nos Services</span>
+        </div>
+        <div class="services-strip__inner">
+            <div class="service-block fade-in" data-delay="1">
+                <div class="service-block__icon">💐</div>
+                <h3 class="service-block__title">Bouquets Sur-Mesure</h3>
+                <p class="service-block__text">Des compositions uniques adaptées à vos envies et à chaque occasion.</p>
+            </div>
+            <div class="service-block fade-in" data-delay="2">
+                <div class="service-block__icon">💒</div>
+                <h3 class="service-block__title">Mariages & Événements</h3>
+                <p class="service-block__text">Décoration florale complète pour votre jour le plus important.</p>
+            </div>
+            <div class="service-block fade-in" data-delay="3">
+                <div class="service-block__icon">🌿</div>
+                <h3 class="service-block__title">Plantes & Entretien</h3>
+                <p class="service-block__text">Plantes d'intérieur et conseils personnalisés pour un intérieur verdoyant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED BOUQUETS (ZIGZAG) ===== -->
+    <section class="featured">
+        <div class="container">
+            <div class="featured__header fade-in">
+                <span class="section__label">Nos Créations</span>
+                <h2 class="section__title">Bouquets Vedettes</h2>
+            </div>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="featured-item fade-in">
+            <div class="featured-item__image">
+                <img src="images/bouquet-1.jpg" alt="Bouquet Romance Éternelle">
+            </div>
+            <div class="featured-item__content">
+                <span class="featured-item__label">Classique</span>
+                <h3 class="featured-item__title">Romance Éternelle</h3>
+                <p class="featured-item__text">Un bouquet somptueux de roses rouges et de pivoines, symbole intemporel de passion et d'élégance. Parfait pour déclarer vos sentiments les plus profonds.</p>
+                <div class="featured-item__price">45€</div>
+                <a href="bouquets.html" class="btn btn--primary btn--sm">Découvrir</a>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="featured-item fade-in">
+            <div class="featured-item__image">
+                <img src="images/bouquet-4.jpg" alt="Bouquet Jardin Champêtre">
+            </div>
+            <div class="featured-item__content">
+                <span class="featured-item__label">Champêtre</span>
+                <h3 class="featured-item__title">Jardin Champêtre</h3>
+                <p class="featured-item__text">Une composition libre et naturelle de fleurs des champs, marguerites et herbes folles. Un souffle de campagne qui apporte fraîcheur et légèreté à votre intérieur.</p>
+                <div class="featured-item__price">38€</div>
+                <a href="bouquets.html" class="btn btn--primary btn--sm">Découvrir</a>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="featured-item fade-in">
+            <div class="featured-item__image">
+                <img src="images/bouquet-7.jpg" alt="Bouquet Élégance Blanche">
+            </div>
+            <div class="featured-item__content">
+                <span class="featured-item__label">Mariage</span>
+                <h3 class="featured-item__title">Élégance Blanche</h3>
+                <p class="featured-item__text">Lys, roses blanches et orchidées dans une harmonie immaculée. Le bouquet idéal pour les mariages et les cérémonies, alliant pureté et sophistication.</p>
+                <div class="featured-item__price">55€</div>
+                <a href="bouquets.html" class="btn btn--primary btn--sm">Découvrir</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL ===== -->
+    <section class="testimonial fade-in">
+        <div class="testimonial__inner">
+            <div class="testimonial__stars">★ ★ ★ ★ ★</div>
+            <blockquote class="testimonial__blockquote">
+                <p class="testimonial__text">Fleur & Moi a sublimé notre mariage avec des compositions florales à couper le souffle. Chaque détail était parfait, des centres de table aux bouquets de demoiselles d'honneur. Un travail d'artiste, une écoute exceptionnelle.</p>
+            </blockquote>
+            <p class="testimonial__author">Marie D.</p>
+            <p class="testimonial__role">Mariage, Juin 2025</p>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta fade-in" style="background-image: url('images/cta-bg.jpg');">
+        <div class="cta__content">
+            <h2 class="cta__title">Un événement spécial à fleurir ?</h2>
+            <p class="cta__text">Contactez-nous pour une consultation gratuite et laissez-nous créer des arrangements floraux qui rendront votre occasion inoubliable.</p>
+            <a href="contact.html" class="btn btn--white btn--lg">Prendre rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <!-- Left column -->
+            <div class="footer__left">
+                <h3 class="footer__brand-name">Fleur <span>&</span> Moi</h3>
+                <p class="footer__brand-desc">Artisan fleuriste à Paris depuis 2015. Nous créons des compositions florales uniques pour embellir chaque moment de votre vie.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+            <!-- Right column -->
+            <div class="footer__right">
+                <div>
+                    <h4 class="footer__nav-title">Navigation</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="bouquets.html">Bouquets</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__contact-title">Contact</h4>
+                    <p class="footer__contact-item">12 Rue de Rivoli, 75004 Paris</p>
+                    <p class="footer__contact-item"><a href="tel:0143XXXXXX">01 43 XX XX XX</a></p>
+                    <p class="footer__contact-item"><a href="mailto:contact@fleuretmoi.fr">contact@fleuretmoi.fr</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2026 Fleur & Moi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" aria-label="Retour en haut">&uarr;</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Fleur & Moi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="navbar">
+        <div class="navbar__inner">
+            <ul class="navbar__links--left">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bouquets.html" class="nav-link">Bouquets</a></li>
+            </ul>
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__logo-link">Fleur <span>&</span> Moi</a>
+            </div>
+            <ul class="navbar__links--right">
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="navbar__toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="navbar__mobile">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="bouquets.html" class="nav-link">Bouquets</a>
+            <a href="galerie.html" class="nav-link">Galerie</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+        <div class="navbar__overlay"></div>
+    </header>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner" style="background-image: url('images/gallery-4.jpg');">
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Contactez-nous</h1>
+            <p class="page-banner__subtitle">Parlons de votre projet floral</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact">
+        <div class="container">
+
+            <!-- Centered Form Card -->
+            <div class="contact__form-wrapper fade-in">
+                <h3 class="contact__form-title">Envoyez-nous un message</h3>
+                <p class="contact__form-subtitle">Nous vous répondrons dans les plus brefs délais.</p>
+
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Objet</label>
+                            <select id="subject" name="subject">
+                                <option value="">Choisir un sujet</option>
+                                <option value="Commande de bouquet">Commande de bouquet</option>
+                                <option value="Mariage">Mariage</option>
+                                <option value="Événement">Événement</option>
+                                <option value="Abonnement floral">Abonnement floral</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+                    </div>
+
+                    <div class="contact__form-actions">
+                        <button type="submit" class="btn btn--primary btn--lg">Envoyer le message</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Info Strip -->
+            <div class="contact__info-strip fade-in">
+                <div class="contact__info-card">
+                    <div class="contact__info-icon">📍</div>
+                    <h4 class="contact__info-title">Adresse</h4>
+                    <p class="contact__info-text">12 Rue de Rivoli<br>75004 Paris</p>
+                </div>
+                <div class="contact__info-card">
+                    <div class="contact__info-icon">📞</div>
+                    <h4 class="contact__info-title">Téléphone</h4>
+                    <p class="contact__info-text"><a href="tel:0143XXXXXX">01 43 XX XX XX</a></p>
+                </div>
+                <div class="contact__info-card">
+                    <div class="contact__info-icon">🕐</div>
+                    <h4 class="contact__info-title">Horaires</h4>
+                    <p class="contact__info-text">Lun – Sam : 9h – 19h<br>Dimanche : Fermé</p>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact__map fade-in">
+                <div class="contact__map-placeholder">
+                    <p>📍 Carte interactive — 12 Rue de Rivoli, 75004 Paris</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__left">
+                <h3 class="footer__brand-name">Fleur <span>&</span> Moi</h3>
+                <p class="footer__brand-desc">Artisan fleuriste à Paris depuis 2015. Nous créons des compositions florales uniques pour embellir chaque moment de votre vie.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">PI</a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div>
+                    <h4 class="footer__nav-title">Navigation</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="bouquets.html">Bouquets</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__contact-title">Contact</h4>
+                    <p class="footer__contact-item">12 Rue de Rivoli, 75004 Paris</p>
+                    <p class="footer__contact-item"><a href="tel:0143XXXXXX">01 43 XX XX XX</a></p>
+                    <p class="footer__contact-item"><a href="mailto:contact@fleuretmoi.fr">contact@fleuretmoi.fr</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2026 Fleur & Moi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Retour en haut">&uarr;</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
