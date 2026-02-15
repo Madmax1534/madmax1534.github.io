@@ -37,7 +37,13 @@
                     <h2>Envoyez-nous un message</h2>
                     <p class="form-intro">Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.</p>
                     
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/lomaxia@outlook.fr" method="POST">
+                        <!-- FormSubmit config -->
+                        <input type="hidden" name="_subject" value="Nouveau message depuis Portfolio">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="">
+                        <input type="text" name="_honey" style="display:none">
+
                         <div class="form-group">
                             <label for="name">Nom complet *</label>
                             <input type="text" id="name" name="name" required placeholder="Jean Dupont">
@@ -61,7 +67,7 @@
                         <button type="submit" class="btn btn-primary btn-large btn-block">
                             Envoyer le message
                         </button>
-                        
+
                         <p class="form-note">* Champs obligatoires</p>
                     </form>
 
@@ -175,43 +181,26 @@
 
     <script src="js/main.js"></script>
     <script>
-        // Gestion du formulaire de contact
         const contactForm = document.getElementById('contactForm');
         const successMessage = document.getElementById('form-success');
         const errorMessage = document.getElementById('form-error');
 
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Animation du bouton
+        // Définir l'URL de retour après envoi
+        const currentUrl = window.location.href.split('?')[0];
+        contactForm.querySelector('[name="_next"]').value = currentUrl + '?sent=1';
+
+        // Afficher le message de succès si on revient après envoi
+        if (window.location.search.includes('sent=1')) {
+            successMessage.style.display = 'block';
+            contactForm.style.display = 'none';
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Animation du bouton à l'envoi
+        contactForm.addEventListener('submit', function() {
             const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
             submitBtn.textContent = 'Envoi en cours...';
             submitBtn.disabled = true;
-            
-            // Simuler l'envoi (remplacer par votre logique d'envoi réelle)
-            setTimeout(() => {
-                // Masquer les messages précédents
-                successMessage.style.display = 'none';
-                errorMessage.style.display = 'none';
-                
-                // Simuler un succès (à remplacer par votre logique)
-                const success = true;
-                
-                if (success) {
-                    successMessage.style.display = 'block';
-                    contactForm.reset();
-                    
-                    // Scroll vers le message
-                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                } else {
-                    errorMessage.style.display = 'block';
-                }
-                
-                // Réinitialiser le bouton
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 1500);
         });
 
         // Animation des inputs au focus
@@ -220,7 +209,6 @@
             input.addEventListener('focus', function() {
                 this.parentElement.classList.add('focused');
             });
-            
             input.addEventListener('blur', function() {
                 if (!this.value) {
                     this.parentElement.classList.remove('focused');
